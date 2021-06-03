@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/rlthoadon"
+        >
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/hdicon"
+            android:id="@+id/hdicon"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hdicon"
+            android:id="@+id/tvmahoadon"
+            android:textSize="25dp"
+            android:text="Eo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hdicon"
+            android:id="@+id/tvngayhoadon"
+            android:text="17-04-2001"
+            android:textSize="25dp"
+            android:layout_below="@+id/tvmahoadon"
+            />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_close"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btdeletehoadon"
+            />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

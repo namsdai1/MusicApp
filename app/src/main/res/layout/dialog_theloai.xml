@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        style="@style/Textchu"
+        android:id="@+id/titletl"
+        android:textStyle="bold"
+        android:text="Title"
+        android:textColor="#22377E"/>
+    <EditText
+        android:id="@+id/etmatheloai"
+        style="@style/Textchu"
+        android:hint="Mã The Loai"
+        android:layout_below="@+id/titletl"
+        />
+    <EditText
+        android:layout_below="@id/etmatheloai"
+        style="@style/Textchu"
+        android:hint="Thể Loai"
+        android:id="@+id/tentheloai"
+        />
+    <EditText
+        android:layout_below="@id/tentheloai"
+        style="@style/Textchu"
+        android:hint="Mo ta"
+        android:id="@+id/motatheloai"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Luu"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/themtheloai"
+        android:layout_below="@id/motatheloai"
+        android:background="@drawable/sreen"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Huỷ"
+        android:id="@+id/huytheloai"
+        android:layout_below="@id/motatheloai"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sreen"
+        />
+
+</RelativeLayout>

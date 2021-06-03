@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/relative_music"
+        android:background="@drawable/bkmusic"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Music"
+            android:textSize="30dp"
+            android:id="@+id/txtmusic"
+            android:layout_above="@+id/txtchude"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chu de"
+            android:id="@+id/txtchude"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_below="@+id/txtchude"
+            android:id="@+id/txtid"
+            android:text="ID"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/playnhac"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/play1"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            />
+            <CheckBox
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/heart1"
+
+                android:button="@null"
+                android:background="@drawable/heart1"
+                android:layout_toLeftOf="@+id/playnhac"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

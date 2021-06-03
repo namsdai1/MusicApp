@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtmasach"
+          android:text="Ma sach"
+          android:textSize="30dp"
+          android:layout_alignParentTop="true"
+          />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsoluong"
+        android:layout_below="@+id/txtmasach"
+        android:text="so luong"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtgiabia"
+        android:layout_below="@+id/txtsoluong"
+        android:text="5000D"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tonghoadon"
+        android:layout_below="@+id/txtgiabia"
+        android:textSize="30dp"
+        android:text="Thanh tien"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgdeletehdct"
+        android:background="@drawable/ic_close"
+        android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

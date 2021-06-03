@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Thongke_activity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_thongke"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorAccent"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <TextView
+        android:layout_below="@id/toolbar_thongke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:text="theo ngay t"
+        android:id="@+id/tvtkdate"
+        android:fontFamily="cursive"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:text="theo ngay t"
+        android:id="@+id/tvtkmonth"
+        android:layout_below="@+id/tvtkdate"
+        android:fontFamily="cursive"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:text="theo ngay t"
+        android:id="@+id/tvtkyear"
+        android:layout_below="@+id/tvtkmonth"
+        android:fontFamily="cursive"
+        />
+    <com.github.mikephil.charting.charts.BarChart
+
+        android:id="@+id/combinedChartthongke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvtkyear"
+        />
+
+
+</RelativeLayout>

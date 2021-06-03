@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/Textchu"
+        android:id="@+id/titlemusic"
+        android:textStyle="bold"
+        android:textColor="#1CF614"
+        />
+    <EditText
+        style="@style/Textchu"
+        android:id="@+id/tenmusic"
+        android:hint="Ten music"
+       android:layout_below="@+id/titlemusic"
+
+        />
+    <Spinner
+        style="@style/Textchu"
+        android:id="@+id/sptheloai"
+        android:layout_below="@+id/tenmusic"
+        />
+    <EditText
+        style="@style/Textchu"
+        android:id="@+id/tacgiamusic"
+        android:hint="Tac gia music"
+        android:layout_below="@+id/sptheloai"
+        />
+    <EditText
+        style="@style/Textchu"
+        android:id="@+id/buymusic"
+        android:hint="Gia music"
+        android:layout_below="@+id/tacgiamusic"
+        />
+    <Spinner
+        android:id="@+id/spmusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buymusic"
+        />
+
+    <Button
+        android:id="@+id/btthemmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Them"
+        android:layout_below="@+id/spmusic"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:id="@+id/bthuymusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Them"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spmusic"
+        android:layout_marginRight="20dp"
+        />
+
+
+</RelativeLayout>

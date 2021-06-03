@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".music.musicplay"
+    android:background="@drawable/backgoundmusic"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvmusic"
+        android:layout_alignParentLeft="true"
+        android:text="ngya ma soaksas"
+        android:textColor="#22885F"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/tvtacgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmusic"
+        android:layout_marginLeft="20dp"
+        android:text="Son Tung"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/tvprev"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/prev"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="20dp"
+        />
+    <ImageView
+        android:id="@+id/tvplay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/play"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:layout_toRightOf="@id/tvprev"
+        android:layout_marginLeft="20dp"
+        />
+    <ImageView
+        android:id="@+id/tvstop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/stop"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tvnext"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <ImageView
+        android:id="@+id/tvnext"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <SeekBar
+        android:id="@+id/sbmusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvnext"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/tvtimestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/sbmusic"
+        />
+    <TextView
+        android:id="@+id/tvtimefinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/sbmusic"
+        />
+
+    <ImageView
+        android:id="@+id/ivrotate"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/cdmusic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tvmusic"/>
+
+
+</RelativeLayout>

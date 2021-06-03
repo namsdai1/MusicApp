@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chanceMK">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorAccent"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_alignParentTop="true"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <EditText
+        android:layout_below="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhập mật khẩu cữ"
+        android:id="@+id/etmkc"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhập mật khẩu mới"
+        android:id="@+id/etmkm"
+        android:layout_below="@+id/etmkc"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhập lại mật khẩu mới"
+        android:id="@+id/etmkm2"
+        android:layout_below="@id/etmkm"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đổi"
+        android:layout_below="@+id/etmkm2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btchance"
+        />
+
+</RelativeLayout>

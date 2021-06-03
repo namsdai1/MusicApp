@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleuser"
+        style="@style/Textchu"
+        android:layout_alignParentTop="true"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textColor="#EF2727"/>
+
+    <EditText
+        android:id="@+id/etnameuser"
+        style="@style/Textchu"
+        android:layout_below="@+id/titleuser"
+        android:hint="ten user"
+         />
+    <EditText
+        style="@style/Textchu"
+        android:hint="ngay sinh user"
+        android:id="@+id/etdateuser"
+        android:layout_below="@id/etnameuser"
+        />
+    <EditText
+        style="@style/Textchu"
+        android:hint="phone user"
+        android:id="@+id/etphoneuser"
+        android:layout_below="@id/etdateuser"
+        />
+    <EditText
+        style="@style/Textchu"
+        android:hint="email user"
+        android:id="@+id/etemailuser"
+        android:layout_below="@+id/etphoneuser"
+        />
+    <EditText
+        style="@style/Textchu"
+        android:hint="tên username"
+        android:id="@+id/etadminuser"
+        android:layout_below="@+id/etemailuser"
+        />
+    <EditText
+        style="@style/Textchu"
+        android:hint="ten password"
+        android:id="@+id/etpwduser"
+        android:layout_below="@id/etadminuser"
+        />
+    <Button
+        android:id="@+id/btuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etpwduser"
+        android:text="Thêm"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/sreen"
+        />
+    <Button
+        android:id="@+id/btuserhuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etpwduser"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Huy"
+        android:background="@drawable/sreen"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ggg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="@drawable/anim_color">
+
+
+    <ImageView
+        android:id="@+id/ivbee"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bee2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="364dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/anim_poly"
+        android:layout_alignParentTop="true"
+
+         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#D19844"
+        android:layout_marginBottom="30dp"
+        android:text="ĐĂNG NHẬP"
+        />
+
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_below="@+id/textView4"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:hint="Tài khoản "/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_below="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:hint="Mật khẩu"/>
+    <CheckBox
+        android:layout_below="@+id/txtPassword"
+        android:id="@+id/checkbox"
+        android:text="Lưu thông tin"
+
+        android:layout_marginLeft="10dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"/>
+
+
+
+        <Button
+            android:layout_below="@id/checkbox"
+            android:id="@+id/btnDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/bogoc"
+            android:textColor="#0E12E6"
+            android:text="Đăng Nhập "
+            android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+
+
+
+

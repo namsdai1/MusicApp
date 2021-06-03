@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item  android:id="@+id/gdhome"
+    android:icon="@drawable/home"
+    android:title="Home"/>
+
+    <item android:id="@+id/nav_musiclike"
+        android:icon="@drawable/music"
+        android:title="My ablum"/>
+
+    <item android:id="@+id/nav_thongtin1"
+        android:icon="@drawable/imorta"
+        android:title="Thông tin"/>
+
+</menu>

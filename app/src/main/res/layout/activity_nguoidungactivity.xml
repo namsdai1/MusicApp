@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.nguoidungactivity"
+    android:background="@drawable/backgroung">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorAccent"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:id="@+id/txtdai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_user"
+        android:text="USER"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textColor="#fff000"
+        android:textSize="50dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtdai"
+        android:id="@+id/srcuser"
+
+        />
+
+
+</RelativeLayout>

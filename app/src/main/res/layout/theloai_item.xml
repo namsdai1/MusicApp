@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bogoc"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative_tl">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhac V_POP"
+        android:textSize="30dp"
+        android:id="@+id/tvchudetheloai"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_orange_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvmatheloai"
+        android:layout_below="@+id/tvchudetheloai"
+        android:text="Ps12382"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvmota"
+        android:layout_below="@+id/tvchudetheloai"
+        android:text="Nhac Viet Nam"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tvmatheloai"
+        />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_close"
+        android:layout_alignParentRight="true"
+        android:id="@+id/rcvxoatheloai"
+        />
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
